@@ -58,3 +58,30 @@
 .card:hover {
     transform: translateY(-5px);
 }
+
+.layout-page {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    gap: 20px;
+    padding: 20px;
+}
+
+.layout-page .site-header {
+    grid-area: header;
+}
+
+.layout-page .sidebar {
+    grid-area: sidebar;
+}
+
+.layout-page .main-content {
+    grid-area: main;
+}
+
+.layout-page .layout-footer {
+    grid-area: footer;
+}
