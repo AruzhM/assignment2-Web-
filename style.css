@@ -136,3 +136,46 @@
     margin: 0;
     font-size: 18px;
 }
+
+.portfolio-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 24px;
+}
+.portfolio-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.projects h2 {
+    grid-column: 1 / -1;
+}
+
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ddd2e8;
+    border-radius: 12px;
+}
+
+
+.portfolio-sidebar {
+    padding: 20px;
+    background-color: #f4f0f8;
+    border-radius: 12px;
+}
+
+.portfolio-footer {
+    margin-top: 30px;
+    text-align: center;
+}
