@@ -12,9 +12,49 @@
 
 .site-header a {
     text-decoration: none;
-    color: #69439b;
+    color: #a376de;
 }
 
 .site-header nav a:hover {
-    color: #e88738;
+    color: #e38e49;
+}
+.card img {
+    width: 100%;
+    max-width: 320px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.card-row {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.card {
+    flex: 1;
+    padding: 16px;
+    border: 1px solid #dfcdf0d5;
+    border-radius: 12px;
+}
+
+.card:nth-child(2) img {
+    object-fit: cover;
+    object-position: 75% center;
+}
+
+.card a {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #6b528c;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
